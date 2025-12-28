@@ -391,7 +391,7 @@ This project is [UNLICENSED](LICENSE).
 
 ## 👥 Authors
 
-Your name and team
+Amit Mandal
 
 ## 🙏 Acknowledgments
 
