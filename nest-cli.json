@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/live-pooling-app/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/live-pooling-app/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/live-pooling-app",
+  "projects": {
+    "live-pooling-app": {
+      "type": "application",
+      "root": "apps/live-pooling-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/live-pooling-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/live-pooling-app/tsconfig.app.json"
+      }
+    },
+    "poll-aggregator": {
+      "type": "application",
+      "root": "apps/poll-aggregator",
+      "entryFile": "main",
+      "sourceRoot": "apps/poll-aggregator/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/poll-aggregator/tsconfig.app.json"
+      }
+    },
+    "realtime-service": {
+      "type": "application",
+      "root": "apps/realtime-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/realtime-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/realtime-service/tsconfig.app.json"
+      }
+    },
+    "voting-api": {
+      "type": "application",
+      "root": "apps/voting-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/voting-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/voting-api/tsconfig.app.json"
+      }
+    }
+  }
+}
